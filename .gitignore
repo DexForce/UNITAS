@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+# Local configuration
+.env
+.env.*
+!.env.example
+.DS_Store
+.vscode/
+.idea/
+# Data, model weights and experiment output
+data/
+datasets/
+checkpoints/
+outputs/
+logs/
+wandb/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
