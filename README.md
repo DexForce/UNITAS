@@ -16,7 +16,7 @@
 </p>
 
 <p>
-  <a href="http://unitas-wam.github.io/"><img src="https://img.shields.io/badge/UNITAS-Project_page-4285F4?style=plastic&amp;logo=googlechrome&amp;logoColor=white" alt="UNITAS Project page"></a>
+  <a href="https://dexforce.com/technical-report/#/unitas-wam"><img src="https://img.shields.io/badge/UNITAS-Project_page-4285F4?style=plastic&amp;logo=googlechrome&amp;logoColor=white" alt="UNITAS Project page"></a>
   <a href="https://arxiv.org/abs/2610.12099"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=plastic&amp;logo=arxiv&amp;logoColor=white" alt="Paper: arXiv"></a>
   <img src="https://img.shields.io/badge/Checkpoints-Coming_soon-FFD21E?style=plastic&amp;logo=huggingface&amp;logoColor=white" alt="Checkpoints: Coming soon">
   <img src="https://img.shields.io/badge/Dataset-Coming_soon-FFD21E?style=plastic&amp;logo=huggingface&amp;logoColor=white" alt="Dataset: Coming soon">
