@@ -1,0 +1,46 @@
+name: Package checks
+
+on: [push, pull_request]
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install build ruff
+      - run: ruff check .
+      - run: python -m build
+      - run: python -m pip install -r evaluation/requirements.txt
+      - run: python -m pip install --no-deps dist/*.whl
+      - name: Verify installed package outside the checkout
+        working-directory: /tmp
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import sys
+          from unitas.inference import ACTION_DIMENSIONS
+          from unitas.inference.client import PolicyClient
+          from unitas.inference.robots.assets import resolve_robot_urdf
+          from evaluation.vlabench.configs import load_configs
+
+          assert "torch" not in sys.modules
+          assert ACTION_DIMENSIONS == {"libero": 7, "robotwin": 16, "vlabench": 8}
+          tracks = load_configs()
+          assert sum(len(e) for tasks in tracks.values() for e in tasks.values()) == 2460
+          assert len(tracks["track_2_cross_category"]["insert_flower"]) == 10
+          assert all(Path(resolve_robot_urdf(d)).is_file() for d in ACTION_DIMENSIONS)
+          PY
+          unitas-libero-client --help
+          unitas-libero-plus-client --help
+          unitas-robotwin-client --help
+          unitas-vlabench-client --help
+      - name: Verify bundled examples
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          samples = list(Path("assets/scene_flow/observations").glob("*.npz"))
+          assert len(samples) == 6
+          PY

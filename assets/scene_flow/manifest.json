@@ -1,0 +1,521 @@
+{
+  "format": "unitas.scene_flow.input.v1",
+  "website": "http://unitas-wam.github.io/",
+  "checkpoint": {
+    "filename": "unitas_scene_flow.pt",
+    "sha256": "49c44021c9e32ac7ccf7d69eabeaab0f7480a383a19955d4803d4fc52352b71b"
+  },
+  "inference": {
+    "steps": 10,
+    "chunk_size": 3000,
+    "policy_seed": 42,
+    "scene_seed": 210921
+  },
+  "preparation": "Original website dataset reader and saved per-clip seeds; current RGB-D and recorded history only; original initial query points and display colors.",
+  "future_targets_included": false,
+  "examples": [
+    {
+      "key": "robotwin_7c59d8eb33_0088",
+      "domain": "robotwin",
+      "instruction": "Hold the cylindrical kitchenpot with both arms",
+      "task": "lift_pot",
+      "episode_id": 40,
+      "source_frame": 88,
+      "points": 45989,
+      "input_bytes": 668768,
+      "input_sha256": "6639f552eefc923de36ac3f1f6d5f3d2b3b8e34af74de5250ba43f08f7b19bfc",
+      "title": "Bimanual lifting",
+      "file": "observations/robotwin_7c59d8eb33_0088.npz",
+      "source_group": "/",
+      "recorded_source_sha256": "5a5b2d4f99508c9d65a9394924d6ba3ad8d1e4393d6c2e376c1e8a7d1f0bd1ee",
+      "reader_sample_seed": 160572,
+      "reader_conditioning_seed": 160572,
+      "history_frame_indices": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88
+      ],
+      "cameras": [
+        "cam0",
+        "cam1",
+        "cam2"
+      ],
+      "scene_flow_fps": 15.0,
+      "scene_flow_horizon": 20,
+      "gripper_flow_fps": 15.0,
+      "gripper_flow_horizon": 20,
+      "validation": {
+        "shapes": {
+          "scene": [
+            21,
+            45989,
+            3
+          ],
+          "gripper": [
+            21,
+            40,
+            3
+          ],
+          "eef_poses": [
+            20,
+            2,
+            7
+          ],
+          "eef_open": [
+            20,
+            2,
+            1
+          ]
+        },
+        "finite": true,
+        "historical_comparison": {
+          "scene": {
+            "max_abs_m": 0.0,
+            "mean_point_distance_m": 0.0
+          },
+          "gripper": {
+            "max_abs_m": 0.0,
+            "mean_point_distance_m": 0.0
+          }
+        }
+      }
+    },
+    {
+      "key": "vlabench_1ffbd3923b_0129",
+      "domain": "vlabench",
+      "instruction": "Insert the chrysanthemum into the vase_seen.",
+      "task": "insert_flower",
+      "episode_id": 178,
+      "source_frame": 129,
+      "points": 72870,
+      "input_bytes": 1019638,
+      "input_sha256": "e8a6aafb4c7fedc961047a5807d20499e86b50cb881c45c8e098240a57f80a67",
+      "title": "Flower insertion",
+      "file": "observations/vlabench_1ffbd3923b_0129.npz",
+      "source_group": "/",
+      "recorded_source_sha256": "1c96b05555ae0df8ca8088e65c9f997bb90ab56527f6914d7f39ecb03acc9949",
+      "reader_sample_seed": 160613,
+      "reader_conditioning_seed": 160613,
+      "history_frame_indices": [
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129
+      ],
+      "cameras": [
+        "cam0",
+        "cam1",
+        "cam2"
+      ],
+      "scene_flow_fps": 10.0,
+      "scene_flow_horizon": 15,
+      "gripper_flow_fps": 10.0,
+      "gripper_flow_horizon": 15,
+      "validation": {
+        "shapes": {
+          "scene": [
+            16,
+            72870,
+            3
+          ],
+          "gripper": [
+            16,
+            20,
+            3
+          ],
+          "eef_poses": [
+            15,
+            2,
+            7
+          ],
+          "eef_open": [
+            15,
+            2,
+            1
+          ]
+        },
+        "finite": true,
+        "historical_comparison": {
+          "scene": {
+            "max_abs_m": 0.0,
+            "mean_point_distance_m": 0.0
+          },
+          "gripper": {
+            "max_abs_m": 0.0,
+            "mean_point_distance_m": 0.0
+          }
+        }
+      }
+    },
+    {
+      "key": "libero_3d040e000e_0077",
+      "domain": "libero",
+      "instruction": "put the white mug on the plate",
+      "task": "put the white mug on the plate",
+      "episode_id": 0,
+      "source_frame": 77,
+      "points": 41801,
+      "input_bytes": 547418,
+      "input_sha256": "312f8d2f4b30de26f192e9ded4a12ec268bbefd75c3e347e70214cdf019393e3",
+      "title": "Put the white mug on the plate",
+      "file": "observations/libero_3d040e000e_0077.npz",
+      "source_group": "episodes/demo_0",
+      "recorded_source_sha256": "a9c15eb8548d6d7aa8a620c17b15fcd71322122c9bf9f89e3935b3f368532419",
+      "reader_sample_seed": 160561,
+      "reader_conditioning_seed": 160561,
+      "history_frame_indices": [
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77
+      ],
+      "cameras": [
+        "cam0",
+        "cam1"
+      ],
+      "scene_flow_fps": 20.0,
+      "scene_flow_horizon": 20,
+      "gripper_flow_fps": 20.0,
+      "gripper_flow_horizon": 20,
+      "validation": {
+        "shapes": {
+          "scene": [
+            21,
+            41801,
+            3
+          ],
+          "gripper": [
+            21,
+            20,
+            3
+          ],
+          "eef_poses": [
+            20,
+            2,
+            7
+          ],
+          "eef_open": [
+            20,
+            2,
+            1
+          ]
+        },
+        "finite": true,
+        "historical_comparison": {
+          "scene": {
+            "max_abs_m": 0.0,
+            "mean_point_distance_m": 0.0
+          },
+          "gripper": {
+            "max_abs_m": 0.0,
+            "mean_point_distance_m": 0.0
+          }
+        }
+      }
+    },
+    {
+      "key": "vlabench_6247189d0f_0064",
+      "domain": "vlabench",
+      "instruction": "Please take the book cybersecurity",
+      "task": "select_book",
+      "episode_id": 178,
+      "source_frame": 64,
+      "points": 71159,
+      "input_bytes": 1053789,
+      "input_sha256": "c66bb9fb069328215be42cb265faf2b5e46726d575856626f8dc3f9c951a8642",
+      "title": "Book extraction",
+      "file": "observations/vlabench_6247189d0f_0064.npz",
+      "source_group": "/",
+      "recorded_source_sha256": "941d46779270b9fc2af4f167b719b9127f751157819768f52b4fade468e3d2f6",
+      "reader_sample_seed": 160548,
+      "reader_conditioning_seed": 160548,
+      "history_frame_indices": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64
+      ],
+      "cameras": [
+        "cam0",
+        "cam1",
+        "cam2"
+      ],
+      "scene_flow_fps": 10.0,
+      "scene_flow_horizon": 15,
+      "gripper_flow_fps": 10.0,
+      "gripper_flow_horizon": 15,
+      "validation": {
+        "shapes": {
+          "scene": [
+            16,
+            71159,
+            3
+          ],
+          "gripper": [
+            16,
+            20,
+            3
+          ],
+          "eef_poses": [
+            15,
+            2,
+            7
+          ],
+          "eef_open": [
+            15,
+            2,
+            1
+          ]
+        },
+        "finite": true,
+        "historical_comparison": {
+          "scene": {
+            "max_abs_m": 0.0,
+            "mean_point_distance_m": 0.0
+          },
+          "gripper": {
+            "max_abs_m": 0.0,
+            "mean_point_distance_m": 0.0
+          }
+        }
+      }
+    },
+    {
+      "key": "robotwin_clean_7779f30bed_0150",
+      "domain": "robotwin",
+      "instruction": "Open the smooth-surface cabinet's drawer and transfer the blue and white playingcards packaging into it.",
+      "task": "put_object_cabinet",
+      "episode_id": 1,
+      "source_frame": 150,
+      "points": 43087,
+      "input_bytes": 653438,
+      "input_sha256": "ac75fee555803fa7d3589f46eecfcfda7018b4ee244fe871c3e40d4bd504f4be",
+      "title": "Drawer opening",
+      "file": "observations/robotwin_clean_7779f30bed_0150.npz",
+      "source_group": "/",
+      "recorded_source_sha256": "57302c309900b35fa3a7e207e1113e2c15b199546d7053f13f296680cbe44496",
+      "reader_sample_seed": 160634,
+      "reader_conditioning_seed": 160634,
+      "history_frame_indices": [
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150
+      ],
+      "cameras": [
+        "cam0",
+        "cam1",
+        "cam2"
+      ],
+      "scene_flow_fps": 15.0,
+      "scene_flow_horizon": 20,
+      "gripper_flow_fps": 15.0,
+      "gripper_flow_horizon": 20,
+      "validation": {
+        "shapes": {
+          "scene": [
+            21,
+            43087,
+            3
+          ],
+          "gripper": [
+            21,
+            40,
+            3
+          ],
+          "eef_poses": [
+            20,
+            2,
+            7
+          ],
+          "eef_open": [
+            20,
+            2,
+            1
+          ]
+        },
+        "finite": true,
+        "historical_comparison": {
+          "scene": {
+            "max_abs_m": 0.0,
+            "mean_point_distance_m": 0.0
+          },
+          "gripper": {
+            "max_abs_m": 0.0,
+            "mean_point_distance_m": 0.0
+          }
+        }
+      }
+    },
+    {
+      "key": "libero_592e39dde0_0087",
+      "domain": "libero",
+      "instruction": "put the black bowl on top of the cabinet",
+      "task": "put the black bowl on top of the cabinet",
+      "episode_id": 0,
+      "source_frame": 87,
+      "points": 40641,
+      "input_bytes": 483080,
+      "input_sha256": "22910c13639c17636d72719ee9586c2627bd723736b7e1eaa030305c165d71ce",
+      "title": "Put the black bowl on top of the cabinet",
+      "file": "observations/libero_592e39dde0_0087.npz",
+      "source_group": "episodes/demo_0",
+      "recorded_source_sha256": "e9d94d0c5022df6dd853ce696ba1f4731337fc3b802092b282b47826a44f066e",
+      "reader_sample_seed": 160571,
+      "reader_conditioning_seed": 160571,
+      "history_frame_indices": [
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ],
+      "cameras": [
+        "cam0",
+        "cam1"
+      ],
+      "scene_flow_fps": 20.0,
+      "scene_flow_horizon": 20,
+      "gripper_flow_fps": 20.0,
+      "gripper_flow_horizon": 20,
+      "validation": {
+        "shapes": {
+          "scene": [
+            21,
+            40641,
+            3
+          ],
+          "gripper": [
+            21,
+            20,
+            3
+          ],
+          "eef_poses": [
+            20,
+            2,
+            7
+          ],
+          "eef_open": [
+            20,
+            2,
+            1
+          ]
+        },
+        "finite": true,
+        "historical_comparison": {
+          "scene": {
+            "max_abs_m": 0.0,
+            "mean_point_distance_m": 0.0
+          },
+          "gripper": {
+            "max_abs_m": 0.0,
+            "mean_point_distance_m": 0.0
+          }
+        }
+      }
+    }
+  ],
+  "validation": {
+    "checkpoint_sha256": "1ea9110101b4f40252cca53843ab7fce9bc3f67a0f84f25c230022489d76e422",
+    "source_sha256": "70f56e80bafd44cd124bf6e7517a7901fb428904c2ab47ba0f9cc522bb86069d",
+    "torch_version": "2.5.1+cu124",
+    "device": "NVIDIA A800-SXM4-80GB",
+    "florence_dtype": "fp32",
+    "florence_attention": "sdpa",
+    "state_conditioning": "zero_vector",
+    "context_conditioning": "zero_vector",
+    "scene_and_gripper_match_archived_website_predictions": true
+  }
+}

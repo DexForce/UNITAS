@@ -1,0 +1,91 @@
+{
+  "tracks": {
+    "track_1_in_distribution_new": {
+      "sha256": "16e5cba0f9ac8e45d008bd84981fd2d44654fd2e11a1c069efdbba7e192726db",
+      "episodes": 500,
+      "tasks": {
+        "select_painting": 50,
+        "select_book": 50,
+        "select_drink": 50,
+        "select_chemistry_tube": 50,
+        "select_poker": 50,
+        "select_mahjong": 50,
+        "select_toy": 50,
+        "select_fruit": 50,
+        "add_condiment": 50,
+        "insert_flower": 50
+      }
+    },
+    "track_2_cross_category": {
+      "sha256": "cf004383de22d994f83126ca30a315cbfc6a92fd0dbb8d25fa4c185dd75a21fb",
+      "episodes": 460,
+      "tasks": {
+        "select_painting": 50,
+        "select_fruit": 50,
+        "select_toy": 50,
+        "select_poker": 50,
+        "select_mahjong": 50,
+        "insert_flower": 10,
+        "select_chemistry_tube": 50,
+        "add_condiment": 50,
+        "select_drink": 50,
+        "select_book": 50
+      }
+    },
+    "track_3_common_sense_new": {
+      "sha256": "6ac18a7bf98f422c901c89a3f43ce362a6e91cbdd05489ab8c37395a921e1e3d",
+      "episodes": 500,
+      "tasks": {
+        "select_painting": 50,
+        "select_book": 50,
+        "select_drink": 50,
+        "select_chemistry_tube": 50,
+        "select_toy": 50,
+        "select_fruit": 50,
+        "add_condiment": 50,
+        "insert_flower": 50,
+        "select_nth_largest_poker": 50,
+        "select_unique_type_mahjong": 50
+      }
+    },
+    "track_4_semantic_instruction_new": {
+      "sha256": "070fcaf33436ba039971464e79055ee429fc71bfa33e500bbc72036c25890f61",
+      "episodes": 500,
+      "tasks": {
+        "select_painting": 50,
+        "select_book": 50,
+        "select_drink": 50,
+        "select_chemistry_tube": 50,
+        "select_poker": 50,
+        "select_mahjong": 50,
+        "select_toy": 50,
+        "select_fruit": 50,
+        "add_condiment": 50,
+        "insert_flower": 50
+      }
+    },
+    "track_6_unseen_texture_new": {
+      "sha256": "43ceeafbb72447c7508a4d83ad8bd39a7deb65536bad88aa1037f62620f6b595",
+      "episodes": 500,
+      "tasks": {
+        "select_painting": 50,
+        "select_book": 50,
+        "select_drink": 50,
+        "select_chemistry_tube": 50,
+        "select_poker": 50,
+        "select_mahjong": 50,
+        "select_toy": 50,
+        "select_fruit": 50,
+        "add_condiment": 50,
+        "insert_flower": 50
+      }
+    }
+  },
+  "checks": {
+    "track4_layout_matches_track1": true,
+    "track6_instructions_match_track1": true,
+    "track3_chemistry_no_tags": true,
+    "track3_special_tasks_unchanged": true
+  },
+  "note": "Fixed evaluation configurations used by the released VLABench checkpoints."
+}

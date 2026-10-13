@@ -1,0 +1,7 @@
+# Client dependencies; install the simulator SDK separately.
+numpy>=1.24,<2
+scipy>=1.10
+requests>=2.31
+json-numpy>=2.1
+imageio[ffmpeg]>=2.34
+pyyaml>=6

@@ -1,0 +1,19 @@
+{
+  "upstream": "OpenMOSS/VLABench",
+  "revision": "cf588fe60c0c7282174fe979f5913170cfe69017",
+  "files": {
+    "tasks/dm_task.py": {
+      "base_sha256": "5e0011bf019ac2393a51560eb46750c0319a27c6b36074a3bcf4a6bb04b9e109",
+      "archived_sha256": "02498f501d26af3104506df161ab1a91c674ab81e0d61f0a9b089820f8bf238b",
+      "patched_sha256": "4bd3581bb495409db7556b88dc379b77be322c24d3fce958b1ef3e79f45a5909"
+    },
+    "tasks/hierarchical_tasks/composite/play_poker_series.py": {
+      "base_sha256": "feb6a5bb4bf3ab67af78ba80c26e6381bb8f796b409b4bce049e83262a7e7189",
+      "archived_sha256": "c31eecb63e79ea3217df7ac10aee9718baf5baf8a9c710fd5927690eb2da84a9"
+    },
+    "tasks/hierarchical_tasks/primitive/select_painting_series.py": {
+      "base_sha256": "cdcf5c48763e1b380ff6a4b9c41ccef8c091aa18b21b2ef79ed6c5b5f081d7b6",
+      "archived_sha256": "231dda432397439f4465ce012333794846aad877b81b712e3c55140e9a9d9b1c"
+    }
+  }
+}

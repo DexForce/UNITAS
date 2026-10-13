@@ -16,13 +16,19 @@ dist/
 .vscode/
 .idea/
 # Data, model weights and experiment output
-data/
-datasets/
-checkpoints/
-outputs/
-logs/
-wandb/
+/data/
+/datasets/
+/checkpoints/
+/outputs/
+/logs/
+/wandb/
 *.pt
 *.pth
 *.ckpt
 *.safetensors
+
+*.npz
+!assets/scene_flow/observations/*.npz
+*.tar
+*.tar.gz
+*.log

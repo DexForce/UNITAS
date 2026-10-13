@@ -1,0 +1,13 @@
+--- a/VLABench/tasks/dm_task.py
++++ b/VLABench/tasks/dm_task.py
+@@ -302,6 +302,10 @@
+             terminal = False
+         return terminal
+ 
++    def check_success(self, physics):
++        """Return the benchmark success condition for the current state."""
++        return bool(self.should_terminate_episode(physics))
++
+     def check_collision(self, physics):
+         # body1_id = physics.model.body(body1_name+"/").id
+         # body2_id = physics.model.body(body2_name+"/").id
