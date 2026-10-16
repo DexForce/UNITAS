@@ -165,13 +165,3 @@ We kindly encourage citation of our work if you find it useful.
   url={https://arxiv.org/abs/2610.12099},
 }
 ```
-
-## Star History
-
-<a href="https://www.star-history.com/?repos=dexforce%2Funitas&amp;type=date&amp;legend=top-left">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=dexforce/unitas&amp;type=date&amp;theme=dark&amp;legend=top-left" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=dexforce/unitas&amp;type=date&amp;legend=top-left" />
-    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=dexforce/unitas&amp;type=date&amp;legend=top-left" />
-  </picture>
-</a>
