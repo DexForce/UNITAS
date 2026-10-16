@@ -3,22 +3,24 @@
 <h1>Unitas: A 3D-Native World Action Model for Embodied Manipulation</h1>
 
 <p>
+  <a href="https://dexforce.com/technical-report/#/unitas-wam"><img src="https://img.shields.io/badge/-Project%20Page-0A66C2?logo=googlechrome&amp;logoColor=white&amp;labelColor=555" alt="Project Page" /></a>
+  <a href="https://arxiv.org/abs/2610.12099"><img src="https://img.shields.io/badge/-Paper-B31B1B?logo=arxiv&amp;logoColor=white&amp;labelColor=555" alt="Paper" /></a>
+  <a href="https://huggingface.co/RobbinWang123/Unitas"><img src="https://img.shields.io/badge/%F0%9F%A4%97-Model%20Weights-yellow" alt="Model Weights" /></a>
+  <img src="https://img.shields.io/badge/Dataset-Coming%20soon-9CA3AF" alt="Dataset: Coming soon" />
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-green" alt="License: Apache 2.0" /></a>
+</p>
+
+<p>
 <span><a href="https://robbinw.github.io/" rel="noopener noreferrer" target="_blank">Ruixiang Wang</a><sup>1,2*</sup></span>, &nbsp; <span><a href="https://yysu.site/" rel="noopener noreferrer" target="_blank">Yongyi Su</a><sup>3*†</sup></span>, &nbsp; <span>Wenlve Zhou<sup>3</sup></span>, &nbsp; <span>Bo Yue<sup>1,2</sup></span>, &nbsp; <span>Hengyan Liu<sup>1,2</sup></span>, &nbsp; <span>Dekun Lu<sup>2</sup></span><br>
 <span>Yuxin Tian<sup>1,2</sup></span>, &nbsp; <span>Yihan Fang<sup>1,2</sup></span>, &nbsp; <span>Zerui Wu<sup>2</sup></span>, &nbsp; <span>Xing Hu<sup>2</sup></span>, &nbsp; <span>Jietao Chen<sup>2</sup></span>, &nbsp; <span>Yong Guo<sup>2</sup></span><br>
 <span>Ziyan He<sup>2</sup></span>, &nbsp; <span>Junbin Yuan<sup>4</sup></span>, &nbsp; <span>Guiliang Liu<sup>1</sup></span>, &nbsp; <span>Xiaofen Xing<sup>5</sup></span>, &nbsp; <span><a href="http://kuijia.site/" rel="noopener noreferrer" target="_blank">Kui Jia</a><sup>1,2</sup></span>
 <br>
 <sub>
-<sup>1</sup> CUHK-SZ &nbsp; <sup>2</sup> DexForce &nbsp; <sup>3</sup> FSU &nbsp; <sup>4</sup> SYSU &nbsp; <sup>5</sup> SCUT<br>
+<sup>1</sup> CUHK-SZ &nbsp; <sup>2</sup> DexForce &nbsp; <sup>3</sup> FSU &nbsp; <sup>4</sup> SYSU &nbsp; <sup>5</sup> SCUT &nbsp; · &nbsp;
 <sup>*</sup> Equal contribution &nbsp; <sup>†</sup> Correspondence to &lt;suyongyi@fosu.edu.cn&gt;
 </sub>
 </p>
 
-<p>
-  <a href="https://dexforce.com/technical-report/#/unitas-wam"><img src="https://img.shields.io/badge/UNITAS-Project_page-4285F4?style=plastic&amp;logo=googlechrome&amp;logoColor=white" alt="UNITAS Project page"></a>
-  <a href="https://arxiv.org/abs/2610.12099"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=plastic&amp;logo=arxiv&amp;logoColor=white" alt="Paper: arXiv"></a>
-  <a href="https://huggingface.co/RobbinWang123/Unitas"><img src="https://img.shields.io/badge/Checkpoints-Hugging_Face-FFD21E?style=plastic&amp;logo=huggingface&amp;logoColor=white" alt="Checkpoints"></a>
-  <img src="https://img.shields.io/badge/Dataset-Coming_soon-FFD21E?style=plastic&amp;logo=huggingface&amp;logoColor=white" alt="Dataset: Coming soon">
-</p>
 </div>
 
 <img src="assets/overview.png" alt="UNITAS overview" width="100%">
@@ -163,3 +165,13 @@ We kindly encourage citation of our work if you find it useful.
   url={https://arxiv.org/abs/2610.12099},
 }
 ```
+
+## Star History
+
+<a href="https://www.star-history.com/?repos=dexforce%2Funitas&amp;type=date&amp;legend=top-left">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=dexforce/unitas&amp;type=date&amp;theme=dark&amp;legend=top-left" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=dexforce/unitas&amp;type=date&amp;legend=top-left" />
+    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=dexforce/unitas&amp;type=date&amp;legend=top-left" />
+  </picture>
+</a>
